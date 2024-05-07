@@ -1,0 +1,12 @@
+.tabsList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.tabPanel {
+  padding: 15px 0 0 0 !important;
+}
+
+.tabsBox {
+  margin-bottom: 20px;
+}

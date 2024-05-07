@@ -1,0 +1,26 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  border-radius: 6px;
+
+  padding: 20px;
+  margin-bottom: 25px;
+
+  &.darkTheme {
+    border: 1px solid #596683;
+  }
+  &.lightTheme {
+    border: 1px solid #c5c5c5;
+  }
+
+  .changeLeadDataBlock {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+  }
+
+  .saveBtn {
+    align-self: flex-start;
+  }
+}

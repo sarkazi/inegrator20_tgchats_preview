@@ -1,0 +1,12 @@
+.main {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  margin-bottom: 20px;
+  .manualBtn {
+    background: linear-gradient(#4c8bf7, #7fa6e8) !important;
+  }
+}

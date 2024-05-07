@@ -1,0 +1,19 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  .changeLeadDataBlock {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+  }
+
+  .saveBtn {
+    align-self: flex-start;
+  }
+}
+
+.progressBox {
+  padding: 25px;
+}

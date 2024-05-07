@@ -1,0 +1,188 @@
+.tariffBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+  column-gap: 20px;
+
+  &.darkTheme {
+    .tariffItem {
+      &.short {
+        border: 1px solid #618fdf;
+        color: white;
+        .itemTerm {
+          color: white;
+        }
+        .itemTitle {
+          color: white;
+        }
+      }
+    }
+  }
+  &.lightTheme {
+    .tariffItem {
+      &.short {
+        border: 1px solid #4c8bf7;
+        color: black;
+        .itemTerm {
+          color: black;
+        }
+        .itemTitle {
+          color: black;
+        }
+      }
+    }
+  }
+
+  .tariffItem {
+    border-radius: 10px;
+    padding: 20px 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &.long .starIcon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: aquamarine;
+      font-size: 25px;
+      animation: spin 5s linear infinite;
+    }
+
+    &:nth-child(2) {
+      .btnBlock {
+        .btnInv {
+          color: white;
+        }
+      }
+    }
+
+    .btnBlock {
+      display: flex;
+      flex-direction: column;
+      row-gap: 7px;
+      width: 100%;
+
+      .btnInv {
+        font-size: 10px;
+      }
+
+      .payBtn {
+        width: 100%;
+      }
+    }
+
+    .itemTitle {
+      font-size: 26px;
+      font-weight: 600;
+    }
+    .redeemBlock {
+      display: flex;
+
+      align-items: center;
+      flex: 1 0 auto;
+      column-gap: 10px;
+      margin-bottom: 20px;
+      padding: 3px 6px;
+      border-radius: 5px;
+
+      span {
+        font-size: 12px;
+        font-weight: 400;
+      }
+      svg {
+        font-size: 15px;
+        color: rgb(200, 255, 238);
+      }
+    }
+
+    .itemPrice {
+      font-size: 20px;
+      font-weight: 500;
+    }
+    .itemDesc {
+      font-size: 15px;
+      font-weight: 400;
+      margin-bottom: 30px;
+
+      margin-top: 15px;
+    }
+  }
+}
+
+.short {
+  .redeemBlock {
+    visibility: hidden;
+  }
+  .itemDesc {
+    color: rgb(113, 113, 113);
+  }
+}
+.long {
+  background: linear-gradient(#4c8bf7, #7fa6e8);
+
+  .redeemBlock {
+    span {
+      color: rgb(221, 255, 245);
+    }
+  }
+  .itemDesc {
+    color: white;
+  }
+  .itemTitle {
+    color: white;
+  }
+  .itemTerm {
+    color: white;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.activeSubsInfoBlock {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  margin-bottom: 30px;
+  .subsInfoIcon {
+    font-size: 23px;
+  }
+  .valid {
+    color: aquamarine;
+  }
+  .expire {
+    color: rgb(255, 29, 112);
+  }
+}
+
+.infoBlock {
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  h6 {
+    font-weight: 500;
+  }
+
+  &.darkTheme {
+    border: 1px solid #596683;
+    color: #dadada;
+    background-color: #0f2231;
+  }
+  &.lightTheme {
+    border: 1px solid #d0d0d0;
+    color: #bcbcbc;
+    background-color: white;
+  }
+}

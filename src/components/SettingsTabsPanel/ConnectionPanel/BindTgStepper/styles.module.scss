@@ -1,0 +1,21 @@
+.inputFlexBox {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.wrapper {
+  .inputGridBox {
+    display: grid;
+    column-gap: 10px;
+  }
+  .insideStepBtn {
+    height: 100%;
+    font-size: 11px;
+  }
+
+  .finalStepBtnBlock {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+  }
+}

@@ -1,0 +1,38 @@
+.modalFooter {
+  margin-right: -30px;
+  margin-left: -30px;
+
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+
+  &.lightMode {
+    background-color: #f5f5f5;
+    border-top: 1px solid #c5c5c5;
+  }
+  &.darkMode {
+    background-color: #0f2231;
+    border-top: 1px solid #596683;
+  }
+
+  .leftBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .iconsBlock {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .rightBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: flex-end;
+
+    svg {
+      width: 100px;
+    }
+  }
+}
